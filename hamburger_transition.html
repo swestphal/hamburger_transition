@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	* {
+		padding:0;
+		margin:0;
+		border:none;}
+		
+	.wrapper {
+		display:inline-block;
+		background-color:yellow;
+		margin:100px 200px;
+	}
+	
+	.hamburger {
+		padding:30px;
+	}
+	
+	.hamburger div {
+		margin-bottom:10px;
+	}
+	
+	.hamburger div:last-child {
+		margin:0;
+	}
+	
+	.strich {
+		width:60px;
+		height:10px;
+		background-color:coral;
+	}
+	
+	
+	.hamburger:hover > div{
+		cursor:pointer;
+		-webkit-transition:all 1s ease-in-out;
+			}
+	
+	.hamburger .strich {
+		-webkit-transition:all 1s ease-in-out;
+	}
+	
+	.hamburger:hover .middle{
+		-webkit-transform:rotate(90deg);
+
+	}
+	
+	.hamburger:hover .upper{
+		-webkit-transform:rotate(45deg);
+		-webkit-transform-origin:-90% 260%;
+		width:40px;	}
+
+	.hamburger:hover .bottom{
+		-webkit-transform:rotate(-45deg);
+		-webkit-transform-origin:90% -200%;
+		width:40px;
+	}
+
+
+
+
+input {
+
+}
+
+#menu_checkbox:checked + .hamburger_cross{
+	
+	z-index:99999;
+	}
+	
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<label for="menu_checkbox">
+	<span>ddddd</span><div class="hamburger">
+		<div class="upper strich">
+		</div>
+		
+		<div class="middle strich">
+		</div>
+		
+		<div class="bottom strich">
+		</div>
+	</div>
+</label>
+		
+<input type="checkbox" id="menu_checkbox"/>
+<span>hallo</span>
+	</div>
+</body>
+</html>
